@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import MoreAboutShare from './MoreAboutShare';
 
 const CskShare = () => {
     const [activeTab, setActiveTab] = useState(0)
@@ -27,11 +28,12 @@ const CskShare = () => {
                 </div>
                 <div className=''>
                     <h4 className='text-xl font-semibold my-5'>About Share</h4>
-                    <p className='text-lg font-semibold text-secondary'>Chennai Super Kings (CSK) Unlisted Shares – Complete Guide to Buy, Sell & Price Updates</p>
+                    <h6 className='text-lg font-semibold text-secondary'>Chennai Super Kings (CSK) Unlisted Shares – Complete Guide to Buy, Sell & Price Updates</h6>
                     <p className='mt-3'>Chennai Super Kings (CSK) is one of the most iconic and successful franchises in the Indian Premier League (IPL). With a loyal fanbase, consistent high performance, and powerful leadership, CSK has established itself as a dominant force in the IPL. Along with its massive fan following, CSK has also become a highly lucrative brand, attracting the interest of investors in the unlisted share market.</p>
                     <p className='mt-3' >In this comprehensive guide, we will provide insights into Chennai Super Kings unlisted shares, including the latest Chennai Super Kings share price, how to buy and sell these unlisted shares, and why investing in CSK unlisted shares can be a great financial opportunity. Additionally, we will explore the performance and growth factors that influence the Chennai Super Kings unlisted share price and what makes it a valuable investment.</p>
-                    <button 
-                    className='w-full px-4 py-2 rounded-full border border-green-600 my-3 hover:bg-green-400 hover:text-white'
+                    {seeAllText  ? <MoreAboutShare /> : ""}
+                    <button
+                        className='w-full px-4 py-2 rounded-full border border-green-600 my-3 hover:bg-green-400 hover:text-white'
                         onClick={() => setSeeAllText(!seeAllText)}
                     >{seeAllText ? "Read Less" : "Read More"}</button>
                 </div>

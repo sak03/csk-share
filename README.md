@@ -21,4 +21,4 @@ My complete Web Development journey.
    ```bash
    npm run dev
 
-This website is live. Please [Click_Here](https://sak03.github.io/csk-share/  "Sartaj") .
+This website is live. Please [Click_Here](https://sak03.github.io/csk-share/  "CSK Shares") .
