@@ -1,5 +1,5 @@
 
-const About = () => {
+const OurBlogs = () => {
   return (
     <div style={{ height: "70vh" }} className='flex justify-center items-center'>
       <strong>This page is under maintanence .</strong>
@@ -7,4 +7,4 @@ const About = () => {
   )
 }
 
-export default About
+export default OurBlogs

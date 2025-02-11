@@ -10,13 +10,13 @@ const Header = () => {
       <Link href={'/'}>
         <img src='https://cdn.prod.website-files.com/66dab781497d9a528975cd7a/66daf9668236041a506e46d7_Logo.svg' className='pointer' alt='brand' height={30} width={192} /></Link>
       <div className='flex my-2 header-item-div'>
-        <Link href={'/skills'}>
-          <span className={`header-item${pathName === '/unlisted-shres' ? "-active" : ""} mx-1 flex`}>Unlisted Shares</span>
+        <Link href={'/unlisted-shares'}>
+          <span className={`header-item${pathName === '/unlisted-shares' ? "-active" : ""} mx-1 flex`}>Unlisted Shares</span>
         </Link>
-        <Link href={'/about'}>
+        <Link href={'/our-blogs'}>
           <span className={`header-item${pathName === '/our-blogs' ? "-active" : ""} flex`}> Our Blogs</span>
         </Link>
-        <Link href={'/contact'}>
+        <Link href={'/contact-us'}>
           <span className={`header-item${pathName === '/contact-us' ? "-active" : ""} mx-1 flex`}>Contact Us</span>
         </Link>
       </div>

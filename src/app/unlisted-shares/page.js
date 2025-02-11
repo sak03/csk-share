@@ -1,5 +1,5 @@
 
-const Skills = () => {
+const UnlistedShres = () => {
     return (
         <div style={{ height: "70vh" }} className='flex justify-center items-center'>
             <strong>This page is under maintanence...</strong>
@@ -7,4 +7,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default UnlistedShres

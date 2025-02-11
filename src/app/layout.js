@@ -15,19 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Sartaj Alam | Web Developer", // Page title
-    description: "Web developer, ReactJS developer, NextJS developer, Front end developer, Full stack developer, MERN Stack developer.", // Page description
+    title: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Page title
+    description: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Page description
     openGraph: {
-        title: "Sartaj Alam | Web Developer", // Title for social media
-        description: "A portfolio showcasing my web development journey.", // Description for social media
-        url: "https://sak03.github.io/sartaj.dev/", // URL of your portfolio
+        title: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Title for social media
+        description: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Description for social media
+        url: "https://www.unlistedsharesindia.com/chennai-super-kings-csk-unlisted-shares", // URL of your portfolio
         siteName: "Sartaj's Portfolio", // Site name
         images: [
             {
-                url: "https://sak03.github.io/sartaj.dev/og-image.jpg", // Social media preview image
+                url: "https://www.unlistedsharesindia.com/chennai-super-kings-csk-unlisted-shares", // Social media preview image
                 width: 1200,
                 height: 630,
-                alt: "Sartaj Alam Portfolio Preview", // Alt text for the image
+                alt: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Alt text for the image
             },
         ],
         locale: "en_US", // Locale, e.g., 'en_US' for English (United States)
@@ -36,23 +36,23 @@ export const metadata = {
     // Twitter Metadata (for Twitter cards)
     twitter: {
         card: "summary_large_image", // Card type: 'summary', 'summary_large_image', 'app', or 'player'
-        title: "Sartaj Alam | Web Developer", // Title for Twitter card
-        description: "A portfolio showcasing my web development journey.", // Description for Twitter card
+        title: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Title for Twitter card
+        description: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Description for Twitter card
         images: ["https://sak03.github.io/sartaj.dev/twitter-image.jpg"], // Image URL for Twitter card
         creator: "@sartaj_03", // Your Twitter handle
     },
     // LinkedIn Metadata
     linkedIn: {
-        title: "Sartaj Alam | Web Developer", // Title for LinkedIn preview
-        description: "A portfolio showcasing my web development journey.", // Description for LinkedIn preview
+        title: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Title for LinkedIn preview
+        description: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Description for LinkedIn preview
         images: ["https://sak03.github.io/sartaj.dev/linkedin-image.jpg"], // Image URL for LinkedIn preview
         url: "https://www.linkedin.com/in/sak03", // Your LinkedIn profile URL
     },
 
     // GitHub Metadata
     github: {
-        title: "Sartaj Alam | Web Developer", // Title for GitHub preview
-        description: "A portfolio showcasing my web development journey.", // Description for GitHub preview
+        title: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Title for GitHub preview
+        description: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Description for GitHub preview
         images: ["https://sak03.github.io/sartaj.dev/github-image.jpg"], // Image URL for GitHub preview
         url: "https://github.com/sak03", // Your GitHub profile URL
     },
@@ -100,9 +100,9 @@ export const metadata = {
     language: "en", // Language of the page content
 
     author: "Sartaj Alam", // Author of the page
-    keywords: ["portfolio", "web developer", "React", "Next.js", "JavaScript", "NodeJS", "MongoDB", "ExpressJS", "Redux", "Redux Toolkit"], // Keywords for SEO
+    keywords: ["Share", "csk", "chennai super kings"], // Keywords for SEO
     generator: "Next.js", // The tool used to generate the page
-    applicationName: "Sartaj Alam's Portfolio", // Name of your application
+    applicationName: "Chennai Super Kings Share Price | Unlisted Shares Opportunities", // Name of your application
 };
 
 
