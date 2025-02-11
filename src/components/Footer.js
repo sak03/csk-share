@@ -13,7 +13,7 @@ const Footer = () => {
             <img src='https://cdn.prod.website-files.com/66dab781497d9a528975cd7a/66daf9668236041a506e46d7_Logo.svg' className='pointer' alt='brand' height={30} width={192} /></Link>
         </div>
         <div className='mt-3 flex'>
-          <h3 className='footer-item mx-3'>Termas & Conditions</h3>
+          <h3 className='footer-item mx-5'>Termas & Conditions</h3>
           <h3 className='footer-item' >Privacy Policy</h3>
         </div>
       </div>

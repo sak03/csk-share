@@ -9,6 +9,7 @@ const CskShare = () => {
     const [mobile, setMobile] = useState("");
     const [quantity, setQuantity] = useState();
     const [message, setMessage] = useState('')
+    const [seeAllText, setSeeAllText] = useState(false)
     const countries = [
         { code: "+91", name: "🇮🇳" },
         { code: "+1", name: "🇺🇸" },
@@ -17,10 +18,23 @@ const CskShare = () => {
     ];
     return (
         <div className='share-section shre-padding'>
-            <div className='share-section1'>
+            <div className='share-section1 p-3'>
                 <img src='https://cdn.prod.website-files.com/66dad9c594a45d74898a5fc6/66e9a5d287ad4d164a1788ae_70521baac89be4d4cb2f223bbf67c974%20(1).avif' alt='csk-image' width={100} />
-                <h4>Chennai Super Kings (CSK) Share Price</h4>
-                <div><span>₹ 188</span> <span>-30</span> <span>-13.8%</span> <span>4M</span></div>
+                <h4 className='text-2xl font-bold my-3'>Chennai Super Kings (CSK) Share Price</h4>
+                <div><span className='text-2xl'>₹ 188</span> <span className='text-danger text-lg my-2 mx-3'>-30</span> <span className='text-danger text-lg my-2'>-13.8%</span> <span className='text-secondary text-lg my-2 mx-3'>4M</span></div>
+                <div className='p-5 border my-5'>
+                    Chart UI
+                </div>
+                <div className=''>
+                    <h4 className='text-xl font-semibold my-5'>About Share</h4>
+                    <p className='text-lg font-semibold text-secondary'>Chennai Super Kings (CSK) Unlisted Shares – Complete Guide to Buy, Sell & Price Updates</p>
+                    <p className='mt-3'>Chennai Super Kings (CSK) is one of the most iconic and successful franchises in the Indian Premier League (IPL). With a loyal fanbase, consistent high performance, and powerful leadership, CSK has established itself as a dominant force in the IPL. Along with its massive fan following, CSK has also become a highly lucrative brand, attracting the interest of investors in the unlisted share market.</p>
+                    <p className='mt-3' >In this comprehensive guide, we will provide insights into Chennai Super Kings unlisted shares, including the latest Chennai Super Kings share price, how to buy and sell these unlisted shares, and why investing in CSK unlisted shares can be a great financial opportunity. Additionally, we will explore the performance and growth factors that influence the Chennai Super Kings unlisted share price and what makes it a valuable investment.</p>
+                    <button 
+                    className='w-full px-4 py-2 rounded-full border border-green-600 my-3 hover:bg-green-400 hover:text-white'
+                        onClick={() => setSeeAllText(!seeAllText)}
+                    >{seeAllText ? "Read Less" : "Read More"}</button>
+                </div>
             </div>
             <div className='share-section2 px-3'>
                 <div className='border rounded p-5'>
