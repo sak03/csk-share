@@ -1,0 +1,68 @@
+/* Mobile Stye */
+@media (max-width: 767px) {
+    .landing-section {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 10px 10px;
+    }
+
+    .landing-section2 {
+        width: 100%;
+        color: $dark-text;
+        padding: 30px 10px;
+    }
+
+    .landing-section2 h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .landing-section {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 10px 80px;
+    }
+
+    .landing-section1 {
+        width: 35%;
+    }
+
+    .landing-section2 {
+        width: 65%;
+        color: $dark-text;
+        padding: 30px 10px;
+    }
+
+    .landing-section2 h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .landing-section {
+        display: flex;
+        background-color: #fff;
+        padding: 5% 10%;
+        background-color: #f9fbf9;
+    }
+
+    .landing-section2 {
+        width: 100%;
+        color: $dark-text;
+        // padding: 30px 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .landing-section2 h1 {
+        font-size: 3.8rem;
+        font-weight: 600;
+    }
+}

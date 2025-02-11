@@ -1,15 +1,11 @@
-import HomeProjects from "@/components/home/HomeProjects";
-import HomeSkills from "@/components/home/HomeSkills";
 import Landing from "@/components/home/Landing";
-import HomeWorkExp from "@/components/home/HomeWorkExp";
+import CskShare from "@/components/home/CskShare";
 
 export default function Home() {
     return (
         <div>
             <Landing />
-            <HomeWorkExp />
-            <HomeProjects />
-            <HomeSkills />
+            <CskShare />
         </div>
     );
 }
