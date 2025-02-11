@@ -1,0 +1,60 @@
+/* Mobile Stye */
+@media (max-width: 767px) {
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        background-color: $theme-light-text;
+    }
+}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $theme-light-text;
+    }
+}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $theme-light-text;
+    }
+}
+
+
+
+.footer-item {
+    color: $dark-text;
+    font-size: 24px;
+}
+
+.footer-sub-item {
+    color: $dark-text;
+    font-size: 18px;
+}
+
+.footer-sub-item-icon {
+    color: $dark-text;
+    font-size: 24px;
+}
+
+.footer-sub-item-icon a:hover {
+    color: $theme-dark-text;
+    font-size: 24px;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: lightgray;
+    margin: 1px 0px;
+}
+
+.footer-bottom {
+    color: $dark-text;
+}

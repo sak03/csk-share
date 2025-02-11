@@ -1,0 +1,26 @@
+ .layout-header {
+     position: fixed;
+     top: 0px;
+     width: 100vw;
+ }
+
+/* Mobile Stye */
+@media (max-width: 767px) {
+   .layout-section{
+    margin-top: 3.35rem;
+   }
+}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .layout-section {
+            margin-top: 4rem;
+        }
+}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .layout-section {
+            margin-top: 4rem;
+        }
+}

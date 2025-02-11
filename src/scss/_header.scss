@@ -1,0 +1,124 @@
+/* Mobile Stye */
+@media (max-width: 767px) {
+    .header-brand {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .brand-name {
+        font-size: 28px;
+        color: $theme-dark-text;
+    }
+
+    .brand-name .brand-name1 {
+        font-size: 24px;
+        color: $theme-dark-text;
+        padding: 2px 10px;
+    }
+
+    .brand-name .brand-name2 {
+        font-size: 24px;
+        color: $light-text;
+        background-color: $theme-dark-text;
+        padding: 2px 5px;
+    }
+
+    .header-item-div {
+        display: none;
+    }
+
+    .hamberger {
+        color: $theme-dark-text;
+        font-size: 28px;
+    }
+}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-brand {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .brand-name {
+        font-size: 38px;
+        color: $theme-dark-text;
+    }
+
+
+    .header-item-div {
+        display: none;
+    }
+
+    .hamberger {
+        color: $theme-dark-text;
+        font-size: 28px;
+    }
+
+}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .header-brand {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .brand-name {
+        margin-top: 3px;
+    }
+
+    .brand-name .brand-name1 {
+        font-size: 40px;
+        color: $theme-dark-text;
+        padding: 2px 10px;
+    }
+
+    .brand-name .brand-name2 {
+        font-size: 40px;
+        color: $light-text;
+        background-color: $theme-dark-text;
+        padding: 2px 10px;
+    }
+
+    .header-item {
+        font-size: 24px;
+        color: $dark-text;
+        padding: 2px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .header-item:hover {
+        font-size: 24px;
+        color: $light-text;
+        background-color: $theme-dark-text;
+        padding: 2px 20px;
+        border-radius: 30px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    .header-item-active {
+        font-size: 24px;
+        color: $light-text;
+        background-color: $theme-dark-text;
+        padding: 2px 20px;
+        border-radius: 30px;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    .header-hamberger {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+
+.pointer {
+    cursor: pointer;
+}
+
+.dark-bg {
+    background-color: $theme-dark-text !important;
+}
+
+.light-bg {
+    background-color: $theme-light-text !important;
+}
+
+.text-warning{
+    color: yellow;
+}
+
+.text-danger{
+    color: red;
+}
+
+/* Mobile Stye */
+@media (max-width: 767px) {
+    .show-in-mobile-view {
+        display: inline-block;
+    }
+
+    .show-in-desktop-view {
+        display: none;
+    }
+}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .show-in-mobile-view {
+        display: none;
+    }
+
+    .show-in-desktop-view {
+        display: inline-block;
+    }
+}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .show-in-mobile-view {
+        display: none;
+    }
+
+    .show-in-desktop-view {
+        display: inline-block;
+    }
+}
