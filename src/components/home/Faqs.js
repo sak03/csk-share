@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { faqDatas } from '@/utils/datas/faqsdata';
 import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
-
+ 
 const Faqs = () => {
     const [selectedFaq, setSelectedFaq] = useState(null)
     return (
@@ -15,7 +15,7 @@ const Faqs = () => {
                     {faqDatas?.map((item) => {
                         return (
                             <div key={item.id} className='py-2'>
-                                <div className='flex justify-between pointer p-3 text-lg'
+                                <div className='flex justify-between w-full pointer p-3 text-lg'
                                     onClick={() => {
                                         if (selectedFaq?.id === item?.id) {
                                             setSelectedFaq(null)
@@ -24,8 +24,8 @@ const Faqs = () => {
                                         }
                                     }}
                                 >
-                                    <strong>{item.question}</strong>
-                                    <span>{selectedFaq?.id === item?.id ? <FiMinusCircle /> : <FiPlusCircle />}</span>
+                                    <strong className='w-5/6'>{item.question}</strong>
+                                    <span className='w-1/5 flex justify-end'>{selectedFaq?.id === item?.id ? <FiMinusCircle /> : <FiPlusCircle />}</span>
                                 </div>
                                 {selectedFaq?.id === item?.id ?
                                     <div className='p-3 text-lg text=secondary'>

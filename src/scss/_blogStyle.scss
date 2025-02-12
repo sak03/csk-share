@@ -1,8 +1,48 @@
 /* Mobile Stye */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .home-blog-body {
+        padding: 50px 10px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    .blog-heading {
+        display: flex;
+        justify-content: left;
+    }
+
+    .blog-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-item {
+        width: 100%;
+    }
+}
 
 /* Tablet Styel */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-blog-body {
+        padding: 100px 150px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    .blog-heading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .blog-item {
+        width: 50%;
+    }
+}
 
 /* Desktop Styele*/
 @media (min-width: 1025px) {
@@ -11,4 +51,18 @@
         background-color: #fff;
         color: #000;
     }
+
+    .blog-heading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-items {
+        display: flex;
+    }
+
+    .blog-item {
+        width: 33.3%;
+    }
+
 }
