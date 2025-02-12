@@ -6,7 +6,7 @@ import { countryList } from '@/utils/datas/formData'
 
 const CskShare = () => {
     const [activeTab, setActiveTab] = useState(0)
-    const [selectedCountry, setSelectedCountry] = useState(countryList[0]);
+    const [selectedCountry, setSelectedCountry] = useState(countryList[37]);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [mobile, setMobile] = useState("");
@@ -95,7 +95,7 @@ const CskShare = () => {
                         >
                             {countryList.map((country) => (
                                 <option key={country.code} value={country.code}>
-                                    {country.flag} {country.name} {country.code}
+                                    {country.flag} {country.code}
                                 </option>
                             ))}
                         </select>
