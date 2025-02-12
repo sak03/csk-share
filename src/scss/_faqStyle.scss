@@ -1,0 +1,14 @@
+/* Mobile Stye */
+@media (max-width: 767px) {}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .faq-body{
+        padding: 100px 250px;
+        background-color: #fff;
+        color: #000;
+    }
+}

@@ -6,25 +6,36 @@ import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 const Faqs = () => {
     const [selectedFaq, setSelectedFaq] = useState(null)
     return (
-        <div>
+        <div className='faq-body'>
             <div className='flex justify-center'>
-                <h1 className='text-3xl'>FAQ's</h1>
+                <h1 className='text-4xl font-bold'>FAQ's</h1>
             </div>
             <div>
-                {faqDatas?.map((item) => {
-                    return (
-                        <div key={item.id}>
-                            <div className='flex justify-between pointer' onClick={() => setSelectedFaq(item)}>
-                                <strong>{item.question}</strong>
-                                <span>{selectedFaq?.id === item?.id ? <FiMinusCircle /> : <FiPlusCircle />}</span>
+                <div className='mt-5'>
+                    {faqDatas?.map((item) => {
+                        return (
+                            <div key={item.id} className='py-2'>
+                                <div className='flex justify-between pointer p-3 text-lg'
+                                    onClick={() => {
+                                        if (selectedFaq?.id === item?.id) {
+                                            setSelectedFaq(null)
+                                        } else {
+                                            setSelectedFaq(item);
+                                        }
+                                    }}
+                                >
+                                    <strong>{item.question}</strong>
+                                    <span>{selectedFaq?.id === item?.id ? <FiMinusCircle /> : <FiPlusCircle />}</span>
+                                </div>
+                                {selectedFaq?.id === item?.id ?
+                                    <div className='p-3 text-lg text=secondary'>
+                                        <p>{item.answer}</p>
+                                    </div> : ""}
+                                {item?.isLast ? "" : <div className='footer-line'></div>}
                             </div>
-                            {selectedFaq?.id === item?.id ? <div>
-                                <small>{item.answer}</small>
-                            </div> : ""}
-                            {item?.isLast ? "" : <div className='footer-line'></div>}
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )
