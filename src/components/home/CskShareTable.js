@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { fundamentalDatas } from "@/utils/datas/fundamentalsData"
 import { shareholdingPatternsDatas } from '@/utils/datas/shareholdingPatternsData'
 import { FaLinkedinIn } from "react-icons/fa";
-import { incomeStatement, balanceSheetDatas, cashFlowDatas } from '@/utils/datas/financialsData'
+import { incomeStatement, financialRatios, balanceSheetAssetsDatas, balanceSheetLiabilitiesDatas, cashFlowDatas } from '@/utils/datas/financialsData'
 const CskShareTable = () => {
-        const [activeTab, setActiveTab] = useState(0);
-    
+    const [activeTab, setActiveTab] = useState(0);
+
     return (
         <div className='share-table-body'>
             <div className="w-[75%]">
@@ -29,33 +29,13 @@ const CskShareTable = () => {
                     <span className={`tab-item${activeTab === 1 ? "-active" : ""}`} onClick={() => setActiveTab(1)}>Balance Sheet</span>
                     <span className={`tab-item${activeTab === 2 ? "-active" : ""}`} onClick={() => setActiveTab(2)}>Cash Flow</span>
                 </div>
-                <div className='border border-gray-300 p-3 rounded-xl'>
-                    {activeTab === 0 ? <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
-                        <thead className="text-gray-400">
-                            <tr>
-                                <th className="border-y border-gray-300 px-4 py-3 text-left">P&L Statement</th>
-                                <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
-                                <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
-                                <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
-                                <th className="border-y border-gray-300 px-4 py-3 text-left">2024</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {incomeStatement?.map((item) => (
-                                <tr key={item.id} className="hover:bg-gray-50">
-                                    <td className="border-y border-gray-300 px-4 py-3">{item.statement}</td>
-                                    <td className="border-y border-gray-300 px-4 py-3">{item.year1}</td>
-                                    <td className="border-y border-gray-300 px-4 py-3">{item.year2}</td>
-                                    <td className="border-y border-gray-300 px-4 py-3">{item.year3}</td>
-                                    <td className="border-y border-gray-300 px-4 py-3">{item.year4}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table> : activeTab === 1 ? 
+                {activeTab === 0 ? (
+                    <>
+                        <div className='border border-gray-300 p-3 rounded-xl'>
                             <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
                                 <thead className="text-gray-400">
                                     <tr>
-                                        <th className="border-y border-gray-300 px-4 py-3 text-left">Assets</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">P&L Statement</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
@@ -63,9 +43,9 @@ const CskShareTable = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {balanceSheetDatas?.map((item) => (
+                                    {incomeStatement?.map((item) => (
                                         <tr key={item.id} className="hover:bg-gray-50">
-                                            <td className="border-y border-gray-300 px-4 py-3">{item.assets}</td>
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.statement}</td>
                                             <td className="border-y border-gray-300 px-4 py-3">{item.year1}</td>
                                             <td className="border-y border-gray-300 px-4 py-3">{item.year2}</td>
                                             <td className="border-y border-gray-300 px-4 py-3">{item.year3}</td>
@@ -73,10 +53,90 @@ const CskShareTable = () => {
                                         </tr>
                                     ))}
                                 </tbody>
-                            </table> : <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                            </table>
+                        </div>
+                        <div className='border border-gray-300 p-3 rounded-xl mt-3'>
+                            <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
                                 <thead className="text-gray-400">
                                     <tr>
-                                        <th className="border-y border-gray-300 px-4 py-3 text-left">P&L Statement</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">Financial Ratios</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">2024</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {financialRatios?.map((item) => (
+                                        <tr key={item.id} className="hover:bg-gray-50">
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.statement}</td>
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.year1}</td>
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.year2}</td>
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.year3}</td>
+                                            <td className="border-y border-gray-300 px-4 py-3">{item.year4}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </>
+                )
+                    : activeTab === 1 ? (
+                        <>
+                            <div className='border border-gray-300 p-3 rounded-xl'>
+                                <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                                    <thead className="text-gray-400">
+                                        <tr>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">Assets</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2024</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {balanceSheetAssetsDatas?.map((item) => (
+                                            <tr key={item.id} className="hover:bg-gray-50">
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.assets}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year1}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year2}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year3}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year4}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className='border border-gray-300 p-3 rounded-xl mt-3'>
+                                <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                                    <thead className="text-gray-400">
+                                        <tr>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">Liabilities</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
+                                            <th className="border-y border-gray-300 px-4 py-3 text-left">2024</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {balanceSheetLiabilitiesDatas?.map((item) => (
+                                            <tr key={item.id} className="hover:bg-gray-50">
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.assets}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year1}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year2}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year3}</td>
+                                                <td className="border-y border-gray-300 px-4 py-3">{item.year4}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </>) :
+                        <div className='border border-gray-300 p-3 rounded-xl'>
+                            <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                                <thead className="text-gray-400">
+                                    <tr>
+                                        <th className="border-y border-gray-300 px-4 py-3 text-left">Cash-Flow Statement</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2021</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2022</th>
                                         <th className="border-y border-gray-300 px-4 py-3 text-left">2023</th>
@@ -94,8 +154,9 @@ const CskShareTable = () => {
                                         </tr>
                                     ))}
                                 </tbody>
-                            </table>}
-                </div>
+                            </table>
+                        </div>
+                }
                 <h4 className='text-2xl font-bold my-5'>Shareholding Pattern</h4>
                 <div className='border border-gray-300 p-3 rounded-xl'>
                     <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
