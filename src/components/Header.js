@@ -50,12 +50,12 @@ const Header = () => {
                   Unlisted Shares
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setIsOpen(false)}>
                 <Link href="our-blogs" className="text-lg text-black hover:text-gray-400">
                   Our Blogs
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setIsOpen(false)}>
                 <Link href="/contact-us" className="text-lg text-black hover:text-gray-400">
                   Contact Us
                 </Link>
