@@ -2,28 +2,29 @@
 import React, { useState } from 'react'
 import MoreAboutShare from './MoreAboutShare';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { countryList } from '@/utils/datas/formData'
 
 const CskShare = () => {
     const [activeTab, setActiveTab] = useState(0)
-    const [selectedCode, setSelectedCode] = useState("+91");
+    const [selectedCountry, setSelectedCountry] = useState(countryList[0]);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [mobile, setMobile] = useState("");
     const [quantity, setQuantity] = useState();
     const [message, setMessage] = useState('')
     const [seeAllText, setSeeAllText] = useState(false)
-    const countries = [
-        { code: "+91", name: "🇮🇳" },
-        { code: "+1", name: "🇺🇸" },
-        { code: "+44", name: "🇬🇧" },
-        { code: "+61", name: "🇦🇺" },
-    ];
     const data = [
         { name: "Oct", value: 218 },
         { name: "Nov", value: 210 },
         { name: "Dec", value: 196 },
         { name: "Jan", value: 187 },
     ];
+    const handleChange = (event) => {
+        const selectedCode = event.target.value;
+        const country = countryList.find((c) => c.code === selectedCode);
+        setSelectedCountry(country);
+    };
+
     return (
         <div className='share-section shre-padding'>
             <div className='share-section1 p-3'>
@@ -89,12 +90,12 @@ const CskShare = () => {
                         {/* Country Code Dropdown */}
                         <select
                             className="w-24 bg-gray-100 px-3 py-2 border-r outline-none text-gray-700"
-                            value={selectedCode}
-                            onChange={(e) => setSelectedCode(e.target.value)}
+                            value={selectedCountry.code}
+                            onChange={handleChange}
                         >
-                            {countries.map((country) => (
+                            {countryList.map((country) => (
                                 <option key={country.code} value={country.code}>
-                                    {country.name} {country.code}
+                                    {country.flag} {country.name} {country.code}
                                 </option>
                             ))}
                         </select>
