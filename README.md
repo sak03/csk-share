@@ -1,11 +1,13 @@
 # CSK Share
-My complete Web Development journey.
+Chennai Super Kings (CSK) Shares
 
 ### Tech Stack
 1. [Next.js](https://nextjs.org/ "Next.js")  
-2. [Bootstrap](https://getbootstrap.com/ "Bootstrap")
-3. [SCSS](https://sass-lang.com/ "SASS")
-4. [React Icons](https://react-icons.github.io/react-icons/icons/fa/ "React Icons")
+2. [Telwind CSS](https://tailwindcss.com/ "Telwind CSS")  
+3. [Bootstrap](https://getbootstrap.com/ "Bootstrap")
+4. [SCSS](https://sass-lang.com/ "SASS")
+5. [React Icons](https://react-icons.github.io/react-icons/icons/fa/ "React Icons")
+6. [Recharts](https://recharts.org/en-US/ "Recharts")
 
 
 ### Steps to Run the Code

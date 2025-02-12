@@ -1,0 +1,15 @@
+/* Mobile Stye */
+@media (max-width: 767px) {}
+
+/* Tablet Styel */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Desktop Styele*/
+@media (min-width: 1025px) {
+    .share-table-body {
+        padding: 20px 150px 50px;
+        background-color: #fff;
+        color: #000;
+
+    }
+}
