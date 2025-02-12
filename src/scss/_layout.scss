@@ -1,26 +1,38 @@
- .layout-header {
-     position: fixed;
-     top: 0px;
-     width: 100vw;
- }
-
 /* Mobile Stye */
-@media (max-width: 767px) {
-   .layout-section{
-    margin-top: 3.35rem;
-   }
+@media (max-width: 667px) {
+    .layout-header {
+        position: fixed !important;
+        top: 1px;
+        width: 100vw;
+    }
+
+    .layout-section {
+        margin-top: 3.35rem;
+    }
 }
 
 /* Tablet Styel */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
+    .layout-header {
+        position: fixed !important;
+        top: 0px;
+        width: 100vw;
+    }
+
     .layout-section {
-            margin-top: 4rem;
-        }
+        margin-top: 4rem;
+    }
 }
 
 /* Desktop Styele*/
 @media (min-width: 1025px) {
+    .layout-header {
+        position: fixed !important;
+        top: 0px;
+        width: 100vw;
+    }
+
     .layout-section {
-            margin-top: 6rem;
-        }
+        margin-top: 6rem;
+    }
 }

@@ -1,8 +1,145 @@
 /* Mobile Stye */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .share-table-body {
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        width: 100vw;
+    }
+
+    .table-body-with {
+        width: 100%;
+    }
+
+    .table-tabview {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .table-tabitem {
+        padding: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .table-tabitem-active {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #35c759;
+        border-bottom: 2px solid #35c759;
+        cursor: pointer;
+    }
+
+    .fundamentals {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fundamentals-section {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .fundamentals-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .financial-table {
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        padding: 5px;
+        font-size: 16px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .financial-table table thead tr th {
+        font-size: 14px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .financial-table table tbody tr td {
+        font-size: 14px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+}
 
 /* Tablet Styel */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .share-table-body {
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        width: 100vw;
+    }
+
+    .table-body-with {
+        width: 100%;
+    }
+
+    .table-tabview {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .table-tabitem {
+        padding: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .table-tabitem-active {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #35c759;
+        border-bottom: 2px solid #35c759;
+        cursor: pointer;
+    }
+
+    .fundamentals {
+        width: 100%;
+        display: flex;
+    }
+
+    .fundamentals-section {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .fundamentals-contents {
+        display: flex;
+                justify-content: space-around;
+    }
+
+    .financial-table {
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 18px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+    .financial-table table thead tr th {
+        font-size: 16px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .financial-table table tbody tr td {
+        font-size: 16px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+}
 
 /* Desktop Styele*/
 @media (min-width: 1025px) {
@@ -10,6 +147,45 @@
         padding: 20px 150px 50px;
         background-color: #fff;
         color: #000;
+    }
 
+    .table-body-with {
+        width: 75%;
+    }
+
+    .fundamentals {
+        width: 100%;
+        display: flex;
+    }
+
+    .fundamentals-section {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .fundamentals-contents {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .financial-table {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .financial-table table thead tr th {
+        font-size: 20px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .financial-table table tbody tr td {
+        font-size: 20px;
+        padding: 5px;
+        border-bottom: 1px solid lightgray;
     }
 }

@@ -27,7 +27,7 @@ const CskShare = () => {
     return (
         <div className='share-section shre-padding'>
             <div className='share-section1 p-3'>
-                <img src='https://cdn.prod.website-files.com/66dad9c594a45d74898a5fc6/66e9a5d287ad4d164a1788ae_70521baac89be4d4cb2f223bbf67c974%20(1).avif' alt='csk-image' width={100} />
+                <img src='https://cdn.prod.website-files.com/66dad9c594a45d74898a5fc6/66e9a5d287ad4d164a1788ae_70521baac89be4d4cb2f223bbf67c974%20(1).avif' alt='csk-image' width={100} className='rounded-lg' />
                 <h4 className='text-2xl font-bold my-3'>Chennai Super Kings (CSK) Share Price</h4>
                 <div><span className='text-2xl'>₹ 188</span> <span className='text-danger text-lg my-2 mx-3'>-30</span> <span className='text-danger text-lg my-2'>-13.8%</span> <span className='text-secondary text-lg my-2 mx-3'>4M</span></div>
                 <div className='my-5'>

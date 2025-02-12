@@ -28,22 +28,23 @@ const MobileSidebar = () => {
             <div
                 className={`fixed top-0 left-0 h-full w-64 white-bg text-white transform ${isOpen ? "translate-x-0" : "-translate-x-full"
                     } transition-transform duration-300 ease-in-out lg:hidden`}
+                    style={{zIndex:99999999999999}}
             >
-                <ul className="flex flex-col p-4 space-y-4">
+                <ul className="flex flex-col p-4 space-y-4 mt-5">
                     <li>
-                        <a href="#projects" className="text-lg text-black hover:text-gray-400">
+                        <Link href={'/unlisted-shares'} className="text-lg text-black hover:text-gray-400">
                             Unlisted Shares
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#projects" className="text-lg text-black hover:text-gray-400">
+                        <Link href="our-blogs" className="text-lg text-black hover:text-gray-400">
                             Our Blogs
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact" className="text-lg text-black hover:text-gray-400">
+                        <Link href="/contact-us" className="text-lg text-black hover:text-gray-400">
                             Contact Us
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

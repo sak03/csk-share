@@ -1,10 +1,102 @@
 // @import 'variables.scss';
 
 /* Mobile Stye */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .shre-padding {
+        padding: 10px !important;
+    }
+
+    .share-section {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .share-section1 {
+        width: 100%;
+    }
+
+    .share-section2 {
+        width: 100%;
+    }
+
+    .tabs {
+        padding: 7.5px;
+        border-bottom: 2px solid rgba(233, 227, 227, 0.584);
+    }
+
+    .tab-item {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .tab-item-active {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #35c759;
+        border-bottom: 2px solid #35c759;
+        cursor: pointer;
+    }
+
+    ol {
+        list-style-type: decimal;
+        padding-left: 20px;
+    }
+}
 
 /* Tablet Styel */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .shre-padding {
+        padding: 20px 50 !important;
+    }
+
+    .share-section {
+        background-color: #fff;
+        color: #000;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .share-section1 {
+        width: 60%;
+    }
+
+    .share-section2 {
+        width: 40%;
+    }
+
+    .tabs {
+        padding: 7.5px;
+        border-bottom: 2px solid rgba(233, 227, 227, 0.584);
+    }
+
+    .tab-item {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .tab-item-active {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #35c759;
+        border-bottom: 2px solid #35c759;
+        cursor: pointer;
+    }
+
+    ol {
+        list-style-type: decimal;
+        padding-left: 20px;
+    }
+}
 
 /* Desktop Styele*/
 @media (min-width: 1025px) {
@@ -47,8 +139,9 @@
         border-bottom: 2px solid #35c759;
         cursor: pointer;
     }
-        ol {
-            list-style-type: decimal;
-            padding-left: 20px;
-        }
+
+    ol {
+        list-style-type: decimal;
+        padding-left: 20px;
+    }
 }
