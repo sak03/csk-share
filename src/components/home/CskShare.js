@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import MoreAboutShare from './MoreAboutShare';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const CskShare = () => {
     const [activeTab, setActiveTab] = useState(0)
@@ -17,21 +18,39 @@ const CskShare = () => {
         { code: "+44", name: "🇬🇧" },
         { code: "+61", name: "🇦🇺" },
     ];
+    const data = [
+        { name: "Oct", value: 218 },
+        { name: "Nov", value: 210 },
+        { name: "Dec", value: 196 },
+        { name: "Jan", value: 187 },
+    ];
     return (
         <div className='share-section shre-padding'>
             <div className='share-section1 p-3'>
                 <img src='https://cdn.prod.website-files.com/66dad9c594a45d74898a5fc6/66e9a5d287ad4d164a1788ae_70521baac89be4d4cb2f223bbf67c974%20(1).avif' alt='csk-image' width={100} />
                 <h4 className='text-2xl font-bold my-3'>Chennai Super Kings (CSK) Share Price</h4>
                 <div><span className='text-2xl'>₹ 188</span> <span className='text-danger text-lg my-2 mx-3'>-30</span> <span className='text-danger text-lg my-2'>-13.8%</span> <span className='text-secondary text-lg my-2 mx-3'>4M</span></div>
-                <div className='p-5 border my-5'>
-                    Chart UI
+                <div className='my-5'>
+                    <div className="w-full h-80 p-2">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <LineChart data={data}>
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" />
+                                <YAxis domain={[185, 220]} tickCount={8} interval={0} />
+                                {/* <YAxis /> */}
+                                <Tooltip />
+                                <Legend />
+                                <Line type="linear" dataKey="value" stroke="#35c759" strokeWidth={2} />
+                            </LineChart>
+                        </ResponsiveContainer>
+                    </div>
                 </div>
                 <div className=''>
                     <h4 className='text-xl font-semibold my-5'>About Share</h4>
                     <h6 className='text-lg font-semibold text-secondary'>Chennai Super Kings (CSK) Unlisted Shares – Complete Guide to Buy, Sell & Price Updates</h6>
                     <p className='mt-3'>Chennai Super Kings (CSK) is one of the most iconic and successful franchises in the Indian Premier League (IPL). With a loyal fanbase, consistent high performance, and powerful leadership, CSK has established itself as a dominant force in the IPL. Along with its massive fan following, CSK has also become a highly lucrative brand, attracting the interest of investors in the unlisted share market.</p>
                     <p className='mt-3' >In this comprehensive guide, we will provide insights into Chennai Super Kings unlisted shares, including the latest Chennai Super Kings share price, how to buy and sell these unlisted shares, and why investing in CSK unlisted shares can be a great financial opportunity. Additionally, we will explore the performance and growth factors that influence the Chennai Super Kings unlisted share price and what makes it a valuable investment.</p>
-                    {seeAllText  ? <MoreAboutShare /> : ""}
+                    {seeAllText ? <MoreAboutShare /> : ""}
                     <button
                         className='w-full px-4 py-2 rounded-full border border-green-600 my-3 hover:bg-green-400 hover:text-white'
                         onClick={() => setSeeAllText(!seeAllText)}
