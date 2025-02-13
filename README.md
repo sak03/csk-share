@@ -27,4 +27,6 @@ Chennai Super Kings (CSK) Shares
    ```bash
    npm run dev
 
-This website is live. Please [Click_Here](https://sak03.github.io/csk-share/  "CSK Shares") .
+This website is live on GitHub Pages. Please [Click_Here](https://sak03.github.io/csk-share/  "CSK Shares") .
+
+This website is live on Vercel. Please [Click_Here](https://sak03.github.io/csk-share.vercel.app  "CSK Shares") .
