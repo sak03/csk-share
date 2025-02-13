@@ -8,6 +8,10 @@ Chennai Super Kings (CSK) Shares
 4. [SCSS](https://sass-lang.com/ "SASS")
 5. [React Icons](https://react-icons.github.io/react-icons/icons/fa/ "React Icons")
 6. [Recharts](https://recharts.org/en-US/ "Recharts")
+7. [Axios](https://www.npmjs.com/package/axios "Axios")
+8. [SheetJS](https://www.npmjs.com/package/xlsx "SheetJS")
+9. [google-spreadsheet](https://www.npmjs.com/package/google-spreadsheet "google-spreadsheet")
+
 
 
 ### Steps to Run the Code
